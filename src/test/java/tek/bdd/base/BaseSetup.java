@@ -16,7 +16,7 @@ public class BaseSetup {
     //Encapsulation Concept of Java
     private static WebDriver driver;
     private final String APP_URL = "https://qa.insurance.tekschool-students.com/";
-    private final String BROWSER_TYPE = "edge";
+    private final String BROWSER_TYPE = "chrome";
 
     public void openBrowser() {
         //Targeting Chrome Browser.
@@ -52,7 +52,7 @@ public class BaseSetup {
 
 
 
-        if (BROWSER_TYPE.equalsIgnoreCase("chrome")) {
+        if (browserType.equalsIgnoreCase("chrome")) {
 
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless");
@@ -60,10 +60,10 @@ public class BaseSetup {
 
             driver = new ChromeDriver(options);
 
-        } else if (BROWSER_TYPE.equalsIgnoreCase("firefox")) {
+        } else if (browserType.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
 
-        } else if (BROWSER_TYPE.equalsIgnoreCase("edge")) {
+        } else if (browserType.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
 
         } else {
