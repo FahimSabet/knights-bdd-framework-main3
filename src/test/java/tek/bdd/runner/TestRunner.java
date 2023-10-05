@@ -11,8 +11,17 @@ import org.junit.runner.RunWith;
         tags = "@Smoke",
         dryRun = false, //if true wont run steps just check for un-implemented steps
         plugin = {
-                "html:target/html_report/report.html"
+                "html:target/html_report/report.html",
+                "json:target/jsonReports/report.json"
         }
 )
 public class TestRunner {
 }
+
+
+
+
+
+
+
+
