@@ -26,7 +26,7 @@ public class BaseSetup {
         // Step 1) the absolute file path to the property file.
 
         String configFilePath= System.getProperty("user.dir") +
-                "/Users/fahimsabet/Downloads/knights-bdd-framework-main 3/src/test/resources/configs/qa_env_config.properties";
+                "/src/test/resources/configs/qa_env_config.properties";
 
 
         // Step 2) Create object from properties class in Java library
